@@ -1,5 +1,11 @@
-﻿body {
+﻿*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body {
+    min-height: 100vh;
 }
 
 .container{
@@ -20,7 +26,6 @@ section {
 }
 
 #content {
-    width: 80%;
     background-color: greenyellow;
     padding: 50px;
 }
@@ -31,6 +36,12 @@ nav {
     padding: 50px;
     display:flex;
     margin-bottom: 
+}
+
+.mainContainer{
+    display:flex;
+    flex-direction:column;
+    width:80%;
 }
 
 footer{
