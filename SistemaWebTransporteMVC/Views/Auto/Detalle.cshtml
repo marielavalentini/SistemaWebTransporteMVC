@@ -1,0 +1,48 @@
+﻿@model SistemaWebTransporteMVC.Models.Auto
+@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2>Detalle</h2>
+<fieldset>
+    <legend>Detalles del auto @Model.AutoId</legend>
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Anio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.AutoId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Anio)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Color)
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<p>
+    @Html.ActionLink("Go to index", "Index", "Auto")
+</p>

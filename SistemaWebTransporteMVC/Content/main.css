@@ -1,0 +1,39 @@
+﻿body {
+
+}
+
+.container{
+    display:flex;
+    flex-basis: 100%;
+    color: white;
+}
+header {
+    width: 80%;
+    background-color: red;
+    padding: 20px;
+}
+
+section {
+    width: 20%;
+    background-color: darkslateblue;
+    padding: 20px;
+}
+
+#content {
+    width: 80%;
+    background-color: greenyellow;
+    padding: 50px;
+}
+
+nav {
+    width: 20%;
+    background-color: yellow;
+    padding: 50px;
+    display:flex;
+    margin-bottom: 
+}
+
+footer{
+    width:100%;
+    background-color:darkorchid;
+}

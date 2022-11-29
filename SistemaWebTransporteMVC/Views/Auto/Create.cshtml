@@ -1,0 +1,36 @@
+﻿@model SistemaWebTransporteMVC.Models.Auto
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "Auto", FormMethod.Post))
+{
+    <p>
+        @Html.LabelFor(model => model.Modelo)
+        @Html.EditorFor(model => model.Modelo)
+        @Html.ValidationMessageFor(model => model.Modelo)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Marca)
+        @Html.EditorFor(model => model.Marca)
+        @Html.ValidationMessageFor(model => model.Marca)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Anio)
+        @Html.EditorFor(model => model.Anio)
+        @Html.ValidationMessageFor(model => model.Anio)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Color)
+        @Html.EditorFor(model => model.Color)
+        @Html.ValidationMessageFor(model => model.Color)
+    </p>
+
+    <input type="Submit" value="Create" />
+
+    @Html.ActionLink("Go to Index", "Index", "Auto")
+}
